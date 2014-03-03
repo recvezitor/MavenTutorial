@@ -1,0 +1,5 @@
+Maven Tutorial
+maven.step0
+ - show effective pom for empty project
+ - show different effective pom for different packaging types (pom vs jar )
+mvn help:effective-pom
