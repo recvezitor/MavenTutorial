@@ -3,3 +3,9 @@ maven.step0
  - show effective pom for empty project
  - show different effective pom for different packaging types (pom vs jar )
 mvn help:effective-pom
+
+maven.step1
+ - multi-module maven project
+ - inheritance vs aggregation
+ mvn clean install
+ mvn help:effective-pom
