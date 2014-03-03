@@ -9,3 +9,9 @@ maven.step1
  - inheritance vs aggregation
  mvn clean install
  mvn help:effective-pom
+
+ maven.step2
+ - define all dependencies explicitly
+ - define all dependencies in dependencyManagement section
+ - define all dependencies versions and scopes using custom properties
+ - define dependencies as much specific as possible
