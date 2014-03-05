@@ -31,3 +31,7 @@ maven.step4
  - override profiles only in extreme cases
  - profiles could be executed in single command but remember that profiles are merged
  - compilation error possible if you changed module that you depend from
+
+maven.step5
+ - scope 'provided'
+ - profile ah-functional

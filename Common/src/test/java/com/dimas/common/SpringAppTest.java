@@ -2,7 +2,6 @@ package com.dimas.common;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.mockito.Mock;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,11 +17,11 @@ public class SpringAppTest {
     private final Logger l = LoggerFactory.getLogger(getClass());
 
     @Autowired
-    private HelloService helloService;
+    private HelloCommonService helloCommonService;
 
     @Test
     public void testSayHello() {
-        assertEquals("Hello world!", helloService.sayHello());
+        assertEquals("Hello world!", helloCommonService.sayHello());
         l.info("Unit. Common");
     }
 }

@@ -183,6 +183,7 @@
     <modules>
         <module>Common</module>
         <module>Parent</module>
+        <module>Util</module>
     </modules>
 
     <profiles>
@@ -207,6 +208,25 @@
                     <plugin>
                         <artifactId>maven-surefire-plugin</artifactId>
                         <configuration combine.self="override">
+                            <includes>
+                                <include>**/*FunctionalTest.java</include>
+                            </includes>
+                        </configuration>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+
+        <profile>
+            <id>ah-functional</id>
+            <build>
+                <plugins>
+                    <plugin>
+                        <artifactId>maven-surefire-plugin</artifactId>
+                        <configuration combine.self="override">
+                            <excludes>
+                                <exclude>**/child1/**/*Test.java</exclude>
+                            </excludes>
                             <includes>
                                 <include>**/*FunctionalTest.java</include>
                             </includes>

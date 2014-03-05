@@ -1,6 +1,6 @@
 package com.dimas.common.functional;
 
-import com.dimas.common.HelloService;
+import com.dimas.common.HelloCommonService;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.slf4j.Logger;
@@ -18,11 +18,11 @@ public class SpringAppFunctionalTest {
     private final Logger l = LoggerFactory.getLogger(getClass());
 
     @Autowired
-    private HelloService helloService;
+    private HelloCommonService helloCommonService;
 
     @Test
     public void testSayHello() {
-        assertEquals("Hello world!", helloService.sayHello());
+        assertEquals("Hello world!", helloCommonService.sayHello());
         l.info("Functional. Common");
     }
 }
