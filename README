@@ -35,3 +35,9 @@ maven.step4
 maven.step5
  - scope 'provided'
  - profile ah-functional
+
+maven.step6
+- combine.children="append" behaviour for functional profile. Added Integration test
+- profile cobertura. Child1 extends cobertura plugin adding 1 exclusions
+- NOTE: profile cobertura must not be defined in the root pom since it isn't used by most of modules
+but plugin cobertura must be defined in pluginManagement section and redefined in modules that actually use this plugin
